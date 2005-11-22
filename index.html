@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="portafolioApp">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +9,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Baloo+Tammudu|Bree+Serif|Cardo|Chewy|Courgette|Encode+Sans+Condensed|Exo|Gloria+Hallelujah|Indie+Flower|Quattrocento+Sans|Righteous|Sedgwick+Ave|Sedgwick+Ave+Display|Shrikhand" rel="stylesheet">
 
 </head>
-<body>
+<body ng-controller="controladorGeneral">
 	<header class="menuprincipal">
 		<nav>
 			
 			<ul class="listamenu">
 				<li><a href="#">Inicio</a></li>
 				<li><a href="#Acerca">Acerca de mi</a></li>				
-				<li><a href="#">Proyectos</a></li>
+				<li><a href="#proyectos">Proyectos</a></li>
 				<li><a href="#">Contacto</a></li>
 			</ul>
 		</nav>
@@ -31,26 +31,21 @@
 		</section>
 		<section class="imagen">
 			<img src="imagenes/caricatura.jpg">
-			<!--<span class="creatividad">Creatividad</span>
-			<span class="diseño">Diseño</span>
-			<span  class="ideas">Ideas</span>
-			<span class="ingenio">Ingenio</span>
-			<span class="dedicación">Dedicación</span> -->
 		</section>
 	</div>
 	<div class="informacion">
 		<h2 id="Acerca"> Acerca de mi </h2>
 		<div class="nombre"> 
 			<div class="descrip">
-			<h3>
-				RONNY OJEDA 
-			</h3>
-			<h4>
-				Desarrollador web. 
-			</h4>
+				<h3>
+					RONNY OJEDA 
+				</h3>
+				<h4>
+					Desarrollador web. 
+				</h4>
 			</div>
 			
-			<a href="#">Mas informacion</a>
+			<a href="#" ng-hide="esconderboton">Mas informacion</a>
 			<div class="todo">
 				<div><span class="negrita">Nombre completo: </span> <span> Ronny Rafael Ojeda Aparicio </span> </div>
 				<div><span class="negrita">Edad: </span> <span>21 años </span></div>
@@ -59,9 +54,42 @@
 				<div><span class="negrita">Número de telefono: </span> <span>0416-737-1245  </span></div>
 			</div> 
 		</div>
+		<div class="nombre segundo">
+			<div class="descrip">
+				<h3>
+					Habilidades
+				</h3>
+			</div>
+			<ul class="habilidades">
+				<li ng-repeat="habilidad in habilidades">
+					{{ habilidad }}
+				</li>
+			</ul>
+		</div>
+
 	
 	</div>
-		
+	<div class="proyectos" id="proyectos">
+		<h2>Proyectos</h2>
+		<a href="#"><img src="img/cole-patrick-4576.jpg">
+			<article>Una página de ropa tejida totalmente interactiva, asincrona, rápida y un manejo de datos excelente.   </article>
+		</a>
+	
+	</div>
+
+	<div class="contacto" id="contacto">
+		<h2>Contactame</h2>
+		<form>
+		 
+		</form>
+	</div>
+	
+	<!-- Angular-->
+	<script  src="angular.min.js"></script>
+	<!-- Modulo -->
+	<script src="js/portafolioApp.js"></script>
+	<!-- Controladores -->
+	<script src="js/controladores/controller.js"></script>
 	
 </body>
 </html>
