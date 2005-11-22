@@ -114,11 +114,19 @@ font-weight: bold;
 position: absolute;
 bottom: 0;
 right: 0;
-padding: 10px 40px;
+padding: 10px 15px;
 text-decoration: none;
-background:  #4D787E;
-border-radius: 20px;
-
+/*border: 1px solid #4D787E;*/
+box-shadow: 3px 3px 20px #EAEAEA;
+color: #8DA3A6;
+font-size: 13px;
+margin: 20px 40px;
+border-radius: 10px;
+background: rgba(240, 234, 168, 0.51);
+}
+.nombre a:hover {
+background: white;
+border: 1px solid rgba(240, 234, 168, 1)
 }
 
 
