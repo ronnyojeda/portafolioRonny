@@ -17,13 +17,6 @@ font-family: 'Delius', sans-serif;
 .menuprincipal nav li > a:hover {
 color: #fff;
 }
-.menuprincipal .logo img {
-width: 150px;
-height: 100px;
-position: absolute;
-top: 5px;
-left: 8%;
-}
 .menuprincipal ul {
 list-style: none;
 text-align: right;
@@ -79,32 +72,54 @@ border: 1px solid #fff;
 }
 .informacion {
 height: 100vh;
-display: flex;
-justify-content: center;
-margin: 30px 10%;
+margin: 0;
+background: white;
 }
-.informacion .foto {
+h2 {
+font-family: 'Architects Daughter', cursive;
+color: #4D787E;
+font-size: 30px;
 text-align: center;
-}
-.informacion img {
-width: 60%;
-height: auto;
+padding: 50px 10px;
+letter-spacing: 4px;
+
 }
 .nombre {
 font-family: 'Architects Daughter', cursive;
 color: #4D787E;
-font-size: 30px;
-width: 30%;
+margin: 20px 10px;
+background: white;
+box-shadow: 3px 3px 20px #EAEAEA;
+padding: 50px 10% 50px 5%  ;
+width: 75%;
+margin: 0 auto;
+border-radius: 15px;
+display: flex;
+position: relative;
+}
+.descrip {
+width: 25%;
 }
 .todo {
 font-family: 'Architects Daughter', cursive;
-color: #4D787E;
 font-size: 15px;
+text-align: justify;
+box-sizing: border-box;
+width: 75%;
 }
 .todo .negrita {
-	font-weight: bold;
+font-weight: bold;
 }
+.nombre a {
+position: absolute;
+bottom: 0;
+right: 0;
+padding: 10px 40px;
+text-decoration: none;
+background:  #4D787E;
+border-radius: 20px;
 
+}
 
 
 
