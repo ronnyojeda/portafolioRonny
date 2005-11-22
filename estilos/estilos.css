@@ -1,0 +1,111 @@
+*{
+margin: 0;
+padding:0;
+box-sizing: border-box;
+}
+.menuprincipal .imagen img {
+height: auto;
+width: 50px;
+}
+.menuprincipal nav li > a {
+text-decoration: none;
+color: #ccc;
+padding: 0 35px;
+font-size: 18px;
+font-family: 'Delius', sans-serif;
+}
+.menuprincipal nav li > a:hover {
+color: #fff;
+}
+.menuprincipal .logo img {
+width: 150px;
+height: 100px;
+position: absolute;
+top: 5px;
+left: 8%;
+}
+.menuprincipal ul {
+list-style: none;
+text-align: right;
+background: #1D1C1C;
+height: 15vh;
+}
+.menuprincipal nav ul li {
+display: inline-block;
+padding-top: 6vh;
+}
+.general {
+background: #4D787E;
+height: 85vh;
+padding: 0;
+margin: 0;
+position: relative;
+}
+.general .imagen img {
+width: 35%;
+height: 85vh;
+float: right;
+clear: both;
+}
+.general section .sobremi {
+width: 45%;
+position: absolute;
+top: 37%;
+left: 25%;
+transform: translate(-37%,-25%);
+}
+.general section .sobremi p {
+font-size: 40px;
+font-family: 'Architects Daughter', cursive;
+color: #ccc;
+}
+.botonnegro {
+text-decoration: none;
+width: 50%;
+color: #ccc;
+font-size: 25px;
+display: block;
+margin-top: 25px;
+padding: 10px;
+border: 1px solid #ccc;
+text-align: center;
+border-radius: 20px;
+font-family: 'Architects Daughter', cursive;
+background: #1D1C1C;
+}
+.botonnegro:hover {
+color: #fff;
+border: 1px solid #fff;
+}
+.informacion {
+height: 100vh;
+display: flex;
+justify-content: center;
+margin: 30px 10%;
+}
+.informacion .foto {
+text-align: center;
+}
+.informacion img {
+width: 60%;
+height: auto;
+}
+.nombre {
+font-family: 'Architects Daughter', cursive;
+color: #4D787E;
+font-size: 30px;
+width: 30%;
+}
+.todo {
+font-family: 'Architects Daughter', cursive;
+color: #4D787E;
+font-size: 15px;
+}
+.todo .negrita {
+	font-weight: bold;
+}
+
+
+
+
+
