@@ -131,44 +131,50 @@ text-decoration: none;
 box-shadow: 3px 3px 20px #EAEAEA;
 color: #8DA3A6;
 font-size: 13px;
-margin: 20px 40px;
-border-radius: 10px;
-background:#8da3a62b;
-}
-.nombre a:hover {
-background: white;
-border: 1px solid #8da3a62b;
-}
+margin: 20px 40px; }
 .proyectos {
-margin: 0 auto;
 text-align: center;
-position: relative;
+
 }
-.proyectos a {
-text-decoration: none;
-}
-.proyectos a img {
-width: 30%;
+.proyectos .contenedor {
+margin: 2% 5%;
+width: 25%;
 height:auto;
-border-radius: 100%;
-transition: all 1s ease-in 
+position: relative;
+display: inline-block;
 }
-.proyectos a img:hover {
-transform: perspective(100px);
+
+.contenedor .div-img  {
+margin-left: auto;
+margin-right: auto;
+display: block;
+overflow: hidden;
 
 
 }
-.proyectos a:hover article {
+.contenedor .img {
+display: block;
+width: 100%;
+margin-right: auto;
+margin-left: auto;
+transform: translate(0px,0);
+transition: all 0.5s ease-in-out;
+}
+.contenedor .texto {
+z-index: -1;
+display: block;
+position: absolute;
+bottom: 5%;
+width: 100%;
+font-family: 'Architects Daughter', cursive;
+color: #4D787E;
 font-size: 17px;
 }
-.proyectos > a article {
-font-family: 'Architects Daughter', cursive;
-font-size: 1px;
-color: #4D787E;
-z-index: -1;
+.div-img:hover .img {
+transform: translate(0px,-50%);
 
-transition: all 1s ease-in 
 }
+
 
 
 
