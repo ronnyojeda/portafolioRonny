@@ -119,22 +119,19 @@ list-style: none;
 margin-bottom: 5px;
 font-size: 17px;
 }
+.habilidades li a {
+padding: 10px;
+font-size: 25px;
+text-decoration: none;
+}
+.habilidades li > a:nth-child(1){
+margin-left: 200px;
+}
 .todo > div {
 margin-bottom: 4px;
 }
-.nombre a {
-position: absolute;
-bottom: 0;
-right: 0;
-padding: 10px 15px;
-text-decoration: none;
-box-shadow: 3px 3px 20px #EAEAEA;
-color: #8DA3A6;
-font-size: 13px;
-margin: 20px 40px; }
 .proyectos {
 text-align: center;
-
 }
 .proyectos .contenedor {
 margin: 2% 5%;
@@ -143,14 +140,11 @@ height:auto;
 position: relative;
 display: inline-block;
 }
-
 .contenedor .div-img  {
 margin-left: auto;
 margin-right: auto;
 display: block;
 overflow: hidden;
-
-
 }
 .contenedor .img {
 display: block;
@@ -168,11 +162,46 @@ bottom: 5%;
 width: 100%;
 font-family: 'Architects Daughter', cursive;
 color: #4D787E;
-font-size: 17px;
+font-size: 15px;
 }
 .div-img:hover .img {
 transform: translate(0px,-50%);
-
+}
+.form {
+width: 40%;
+margin: 0 auto;
+background: rgba(77, 120, 126, 0.64);
+padding: 50px 30px;
+box-sizing: border-box;
+}
+.form fieldset {
+border: 0;
+width: 100%;
+}
+.form input, .form textarea {
+width: 100%;
+margin-bottom: 20px;
+padding: 8px;
+box-sizing: border-box;
+font-size:18px;
+font-family: 'Kurale', serif;
+border: none;
+outline: 0;
+}
+.form textarea {
+min-height: 100px;
+max-height: 200px;
+max-width: 100%;
+}
+.form .btn-default {
+background: rgba(52,239,222,1);
+color: #fff;
+padding: 10px;
+cursor: pointer;
+}
+.form .btn-default:hover {
+background: rgba(52,239,222,0.5);
+	
 }
 
 

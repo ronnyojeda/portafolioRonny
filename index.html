@@ -17,7 +17,7 @@
 				<li><a href="#">Inicio</a></li>
 				<li><a href="#Acerca">Acerca de mi</a></li>				
 				<li><a href="#proyectos">Proyectos</a></li>
-				<li><a href="#">Contacto</a></li>
+				<li><a href="#contacto">Contacto</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -45,7 +45,7 @@
 				</h4>
 			</div>
 			
-			<a href="#" ng-hide="esconderboton">Mas informacion</a>
+			<!--<a href="#" ng-hide="esconderboton">Mas informacion</a>-->
 			<div class="todo">
 				<div><span class="negrita">Nombre completo: </span> <span> Ronny Rafael Ojeda Aparicio </span> </div>
 				<div><span class="negrita">Edad: </span> <span>21 años </span></div>
@@ -62,13 +62,20 @@
 			</div>
 			<ul class="habilidades">
 				<li ng-repeat="habilidad in habilidades">
-					{{ habilidad }}
+					{{ habilidad }}	
+					<a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+					<a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+					<a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+					<a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+					<a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
 				</li>
 			</ul>
+		
 		</div>
 
 	
 	</div>
+	
 	<div class="proyectos" id="proyectos">
 		<h2>Proyectos</h2>
 		<div class="contenedor">
@@ -88,13 +95,26 @@
 
 
 	</div>
-
-	<div class="contacto" id="contacto">
-		<h2>Contactame</h2>
-		<form>
-		 
-		</form>
-	</div>
+		<h2 id="contacto">Contactame</h2>
+	<div class="form">
+  		
+  		<form action="php/asunto.php" method="post">
+  		<fieldset>
+            <input type="text" class="form-control" id="inputNombre" name="nombre" required placeholder= "Nombre" required>
+        </fieldset>
+  		<fieldset>
+            <input type="email" class="form-control" id="inputEmail" name="email" required placeholder="Email"> 
+          </fieldset>
+          <fieldset>
+            <input type="text" class="form-control" id="inputAsunto" name="asunto" required placeholder="Asunto"> 
+          </fieldset>
+          
+         <textarea name="mensaje" id="mensaje" placeholder="Escriba su mensaje" required></textarea>
+          <div class="form-enviar">
+            <input type="submit" class="btn-default" value="Enviar"  id="enviar"></input>
+          </div>
+         </form>
+      </div>
 	
 	<!-- Angular-->
 	<script  src="angular.min.js"></script>
