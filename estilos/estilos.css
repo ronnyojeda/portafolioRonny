@@ -124,10 +124,12 @@ margin: 4% 4% 0 4%;
 .habilidades {
 margin-bottom: 3%;
 }
+.habilidad {
+position: relative;
+}
 .habilidad > h2 {
 padding: 50px 10px 0 10px
 }
-
 .habilidades li img {
 width: 100%;
 height: auto;
@@ -214,13 +216,11 @@ font-size: 15px;
 font-family: 'Delius', sans-serif;
 opacity: 1;
 transition: all 0.3s ease-in-out;
-
 }
 .form input:focus::placeholder, .form textarea:focus::placeholder {
 font-size: 0px;
 opacity: 0;
 }
-
 .form .btn-default {
 background: rgba(52,239,222,1);
 color: #fff;
@@ -229,8 +229,33 @@ cursor: pointer;
 }
 .form .btn-default:hover {
 background: rgba(52,239,222,0.5);
-	
 }
+.footer {
+color: #4d787ecf;
+font-size: 14px;
+font-family: 'Delius', sans-serif;
+background: rgba(128, 128, 128, 0.09);
+box-shadow: 3px 3px 20px #EAEAEA;
+padding: 10px;
+position: relative;
+}
+.footer > div:first-child {
+padding: 0 20px;
+}
+.footer div span {
+font-size: 20px;
+color: #4d787ecf;
+padding: 0 30px;
+}
+.footer div:last-child{
+position: absolute;
+bottom: 5px;
+right: 20px;
+}
+
+
+
+
 
 
 

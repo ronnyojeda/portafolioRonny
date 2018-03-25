@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="estilos/estilos.css">
 	<link href="https://fonts.googleapis.com/css?family=Delius" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Baloo+Tammudu|Bree+Serif|Cardo|Chewy|Courgette|Encode+Sans+Condensed|Exo|Gloria+Hallelujah|Indie+Flower|Quattrocento+Sans|Righteous|Sedgwick+Ave|Sedgwick+Ave+Display|Shrikhand" rel="stylesheet">
-
+	
 </head>
 <body ng-controller="controladorGeneral">
 	<header class="menuprincipal">
@@ -76,8 +76,9 @@
 				<li ng-repeat="habilidad in habilidades">
 					<img ng-src="img/{{habilidad}}">
 				</li>
+
 			</ul>
-			<a href="#">Mas informacion</a>
+			
 		</section>
 		<h2 id="contacto">Contactame</h2>
 	<section class="form">
@@ -99,6 +100,25 @@
           </div>
          </form>
       </section>
+      <footer class="footer">
+      	<div class="copyright">
+      		Copyright &#169; 2018 Ronny Ojeda.
+      	 </div>
+
+      	<div class="redes">
+			 <a href="#" target='_blank'>
+			 	<span class="icon-facebook-rect"></span>
+			 </a> 
+			   <a href="#" target='_blank'>
+			   	<span class="icon-twitter-circled"></span>
+			   </a>
+			   <a href="#" target='_blank'>
+			   	<span class="icon-instagram"></span>
+			   </a> 
+		</div>
+
+
+      </footer>
 	
 	<!-- Angular-->
 	<script  src="angular.min.js"></script>
