@@ -54,30 +54,8 @@
 				<div><span class="negrita">Número de telefono: </span> <span>0416-737-1245  </span></div>
 			</div> 
 		</div>
-		<div class="nombre segundo">
-			<div class="descrip">
-				<h3>
-					Habilidades
-				</h3>
-			</div>
-			<ul class="habilidades">
-				<li ng-repeat="habilidad in habilidades">
-					{{ habilidad }}	
-					
-					<div><a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a></div>
-					<div><a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a></div>
-					<div><a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a></div>
-					<div><a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a></div>
-					<div><a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a></div>
-				</li>
-			</ul>
-		
-		</div>
-
-	
 	</div>
-	
-	<div class="proyectos" id="proyectos">
+	<section class="proyectos" id="proyectos">
 		<h2>Proyectos</h2>
 		<div class="contenedor">
 			<div class="div-img">
@@ -90,14 +68,19 @@
 				<img class="img" src="img/cole-patrick-4576.jpg" alt="CROCHET">
 				<article class="texto">Una página de ropa tejida totalmente interactiva, asincrona, rápida y un manejo de datos excelente.   </article>
 			</div>
-		</div>
-		
+	</section>
+		<section class="habilidad">
+			<h2>Habilidades: </h2>
 
-
-
-	</div>
+			<ul class="habilidades">
+				<li ng-repeat="habilidad in habilidades">
+					<img ng-src="img/{{habilidad}}">
+				</li>
+			</ul>
+			<a href="#">Mas informacion</a>
+		</section>
 		<h2 id="contacto">Contactame</h2>
-	<div class="form">
+	<section class="form">
   		
   		<form action="php/asunto.php" method="post">
   		<fieldset>
@@ -115,7 +98,7 @@
             <input type="submit" class="btn-default" value="Enviar"  id="enviar"></input>
           </div>
          </form>
-      </div>
+      </section>
 	
 	<!-- Angular-->
 	<script  src="angular.min.js"></script>

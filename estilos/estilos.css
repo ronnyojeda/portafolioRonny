@@ -115,23 +115,23 @@ margin-top: 30px;
 ul {
 list-style: none;
 }
-.habilidades > li {
-margin-bottom: 5px;
-font-size: 17px;
+.habilidades li  {
+width: 5%;
+height: 10%;
+display: inline-block;
+margin: 4% 4% 0 4%;
 }
-.habilidades li > div {
-display: inline;
-background: #ccc;
+.habilidades {
+margin-bottom: 3%;
 }
-.habilidades li a {
-padding: 10px;
-font-size: 25px;
-text-decoration: none;
-}
-.habilidades li > div:nth-child(1){
-margin-left: 200px;
+.habilidad > h2 {
+padding: 50px 10px 0 10px
 }
 
+.habilidades li img {
+width: 100%;
+height: auto;
+}
 .todo > div {
 margin-bottom: 4px;
 }
@@ -210,7 +210,7 @@ border: 1px solid rgba(52,239,222,0.3);
 outline: 0;
 }
 .form input::placeholder, .form textarea::placeholder {
-font-size: 16px;
+font-size: 15px;
 font-family: 'Delius', sans-serif;
 opacity: 1;
 transition: all 0.3s ease-in-out;

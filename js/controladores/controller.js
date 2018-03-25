@@ -1,14 +1,12 @@
 app.controller('controladorGeneral', ['$scope', function($scope){
 	$scope.esconderboton=true;
 	$scope.habilidades = [
-		"Html",
-		"Css",
-		"Javascript",
-		"Jquery",
-		"Ajax",
-		"Php",
-		"Angular"
+		"htmllogo.png",
+		"css.png",
+		"phplogo.png",
+		"JavaScript.png",
+		"angular.png",
+		"jquerylogo.png",
+		"ajaxlogo.png"
 			];
-
-	
 }])
