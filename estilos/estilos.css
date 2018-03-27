@@ -13,6 +13,7 @@ color: #ccc;
 padding: 0 35px;
 font-size: 18px;
 font-family: 'Delius', sans-serif;
+cursor: pointer;
 }
 .menuprincipal nav li > a:hover {
 color: #fff;
@@ -143,9 +144,9 @@ text-align: center;
 .proyectos .contenedor {
 margin: 2% 5%;
 width: 25%;
-height:auto;
 position: relative;
 display: inline-block;
+cursor: pointer;
 }
 .contenedor .div-img  {
 margin-left: auto;
@@ -156,6 +157,7 @@ overflow: hidden;
 .contenedor .img {
 display: block;
 width: 100%;
+height: 200px;
 margin-right: auto;
 margin-left: auto;
 transform: translate(0px,0);

@@ -10,14 +10,10 @@
 	
 </head>
 <body ng-controller="controladorGeneral">
-	<header class="menuprincipal">
+	<header class="menuprincipal" id="contenido0">
 		<nav>
-			
 			<ul class="listamenu">
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#Acerca">Acerca de mi</a></li>				
-				<li><a href="#proyectos">Proyectos</a></li>
-				<li><a href="#contacto">Contacto</a></li>
+				<li ng-repeat="item in menu"><a ng-click="srA($index)">{{item}}</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -33,7 +29,7 @@
 			<img src="imagenes/caricatura.jpg">
 		</section>
 	</div>
-	<div class="informacion">
+	<div class="informacion" id="contenido1">
 		<h2 id="Acerca"> Acerca de mi </h2>
 		<div class="nombre"> 
 			<div class="descrip">
@@ -55,23 +51,21 @@
 			</div> 
 		</div>
 	</div>
-	<section class="proyectos" id="proyectos">
+	<section class="proyectos" id="contenido2">
 		<h2>Proyectos</h2>
-		<div class="contenedor">
-			<div class="div-img">
-				<img class="img" src="img/cole-patrick-4576.jpg" alt="CROCHET">
-				<article class="texto">Una página de ropa tejida totalmente interactiva, asincrona, rápida y un manejo de datos excelente.   </article>
+		
+			<div class="contenedor" ng-repeat="proyecto in proyectos" >
+				<a ng-href="{{proyecto.urls}}" target="_blank">
+					<div class="div-img">
+						<img class="img" ng-src="img/{{proyecto.imagen}}" alt="ver">
+						<article class="texto">{{proyecto.descripcion}} </article>
+					</div>
+				</a>
 			</div>
-		</div>
-		<div class="contenedor">
-			<div class="div-img">
-				<img class="img" src="img/cole-patrick-4576.jpg" alt="CROCHET">
-				<article class="texto">Una página de ropa tejida totalmente interactiva, asincrona, rápida y un manejo de datos excelente.   </article>
-			</div>
+		
 	</section>
 		<section class="habilidad">
-			<h2>Habilidades: </h2>
-
+			<h2>Habilidades </h2>
 			<ul class="habilidades">
 				<li ng-repeat="habilidad in habilidades">
 					<img ng-src="img/{{habilidad}}">
@@ -80,7 +74,7 @@
 			</ul>
 			
 		</section>
-		<h2 id="contacto">Contactame</h2>
+		<h2 id="contenido3">Contactame</h2>
 	<section class="form">
   		
   		<form action="php/asunto.php" method="post">
