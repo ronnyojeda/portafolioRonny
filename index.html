@@ -21,9 +21,8 @@
 		<section>
 			<article class="sobremi" >
 				<p>Hola soy Ronny, soy estudiante de ingeniería en telecomunicaciones y un desarrollador web junior.</p>
-				<a href="#" class="botonnegro"> Contactame</a>
+				<a href="#contenido3" class="botonnegro"> Contactame</a>
 			</article>		
-
 		</section>
 		<section class="imagen">
 			<img src="imagenes/caricatura.jpg">
@@ -62,7 +61,6 @@
 					</div>
 				</a>
 			</div>
-		
 	</section>
 		<section class="habilidad">
 			<h2>Habilidades </h2>
@@ -70,14 +68,11 @@
 				<li ng-repeat="habilidad in habilidades">
 					<img ng-src="img/{{habilidad}}">
 				</li>
-
 			</ul>
-			
 		</section>
 		<h2 id="contenido3">Contactame</h2>
 	<section class="form">
-  		
-  		<form action="php/asunto.php" method="post">
+  	<form>
   		<fieldset>
             <input type="text" class="form-control" id="inputNombre" name="nombre" required placeholder= "Nombre" required>
         </fieldset>
@@ -87,8 +82,7 @@
           <fieldset>
             <input type="text" class="form-control" id="inputAsunto" name="asunto" required placeholder="Asunto"> 
           </fieldset>
-          
-         <textarea name="mensaje" id="mensaje" placeholder="Escriba su mensaje" required></textarea>
+            <textarea name="mensaje" id="mensaje" placeholder="Escriba su mensaje" required></textarea>
           <div class="form-enviar">
             <input type="submit" class="btn-default" value="Enviar"  id="enviar"></input>
           </div>
@@ -98,8 +92,7 @@
       	<div class="copyright">
       		Copyright &#169; 2018 Ronny Ojeda.
       	 </div>
-
-      	<div class="redes">
+			<div class="redes">
 			 <a href="#" target='_blank'>
 			 	<span class="icon-facebook-rect"></span>
 			 </a> 
